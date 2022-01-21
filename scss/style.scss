@@ -1,0 +1,233 @@
+@import "nullstyle.scss";
+
+body {
+    font-family: Circe;
+    font-style: normal; //обычное начертание текста
+    color: #ffffff;
+}
+a {
+    color: inherit;
+}
+
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 1132px;
+}
+
+.header {
+    background: linear-gradient(90deg, #9aa5b1, #b3b3b3);
+    &__wrap {
+        max-width: 1920px;
+        background-image: url(../img/JPG/bgc.jpg);
+        height: 800px;
+        margin: 0px auto;
+    }
+    &__top {
+        padding-top: 31px;
+        line-height: 21.6px;
+        &:after {
+            position: absolute;
+            content: "";
+            border: 1px solid #ffffff;
+            width: 100%;
+            margin-top: 33px;
+        }
+    }
+
+    &__top-inside {
+        display: flex;
+        margin: 0px auto;
+        max-width: 1560px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    &__logo {
+        flex-basis: 489px;
+    }
+
+    &__logo-img {
+        height: 24px;
+        width: 175px;
+    }
+
+    &__nav {
+        gap: 15px;
+        flex-basis: 901px;
+        min-width: 386px;
+    }
+
+    &__search {
+        flex-basis: 88px;
+    }
+
+    &__search-img {
+        width: 20px;
+        height: 18px;
+    }
+
+    &__lang-globus {
+    }
+
+    &__globus {
+    }
+
+    &__globus-img {
+        width: 20px;
+        height: 18px;
+    }
+
+    &__lang {
+        display: flex;
+        height: 25px;
+        gap: 11px;
+        flex-basis: 80px;
+    }
+
+    &__lang-text {
+        align-self: flex-end;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        /* max-width: 1132px; */
+        height: 462px;
+        margin: 217px auto 53px;
+        /* padding: 0px 10px; */
+    }
+
+    &__info-text {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    &__text-title {
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 102px;
+        text-transform: uppercase; //все символы текста прописные,верхний регистр
+    }
+
+    &__text {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 10px;
+    }
+    &__link-arrow {
+    }
+
+    &__link-wrap {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 119px;
+        gap: 10px;
+    }
+
+    &__link {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 135%;
+    }
+
+    &__arrow {
+        align-self: flex-end;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 105px;
+        width: 540px;
+        gap: 30px;
+    }
+
+    &__card {
+        display: flex;
+        /* align-items: center; */
+        flex-direction: column;
+        width: 255px;
+        gap: 15px;
+        padding: 30px 40px;
+
+        &_color_blue {
+            background-color: #2378fc;
+        }
+
+        &_color_green {
+            background-color: #30bcc9;
+        }
+
+        &_color_yellow {
+            background-color: #ffc41e;
+        }
+
+        &_color_red {
+            background-color: #f6404f;
+        }
+    }
+
+    &__card-text {
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 130%;
+        letter-spacing: -0.01em; //Определяет интервал между символами в пределах элемента
+    }
+}
+
+.nav {
+    max-width: 586px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    &__link {
+        text-decoration: none;
+    }
+}
+
+.main {
+    &__nav {
+        background-color: #2378fc;
+    }
+
+    &__nav-columns {
+        display: flex;
+        padding: 75px 10px 75px 10px;
+        justify-content: space-between;
+        margin: 0px auto;
+    }
+
+    &__nav-text {
+    }
+
+    &__nav-link-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__nav-text-title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 39px;
+        letter-spacing: -0.01em;
+        margin-bottom: 30px;
+    }
+
+    &__nav-link {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 16px;
+        line-height: 21.6px;
+        &:hover {
+            text-decoration: underline;
+            color: #ffc41e;
+        }
+    }
+}
