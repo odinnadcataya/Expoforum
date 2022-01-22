@@ -16,6 +16,7 @@ a {
 }
 
 .header {
+    /* display: none; */
     background: linear-gradient(90deg, #9aa5b1, #b3b3b3);
     &__wrap {
         max-width: 1920px;
@@ -38,10 +39,11 @@ a {
     &__top-inside {
         display: flex;
         margin: 0px auto;
-        max-width: 1560px;
+        max-width: 1590px;
         align-items: center;
         justify-content: space-between;
         gap: 15px;
+        padding: 0px 15px;
     }
 
     &__logo {
@@ -192,6 +194,7 @@ a {
 
 .main {
     &__nav {
+        /* display: none; */
         background-color: #2378fc;
     }
 
@@ -229,5 +232,151 @@ a {
             text-decoration: underline;
             color: #ffc41e;
         }
+    }
+
+    &__cards-wrap {
+        background-color: #ffc41e;
+        color: #2e373b;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        padding-top: 75px;
+        padding-bottom: 79px;
+    }
+
+    &__cards-header {
+        display: flex;
+        justify-content: space-between;
+        height: fit-content;
+        margin-bottom: 55px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 39px;
+        letter-spacing: -0.01em;
+    }
+
+    &__link-wrap a {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 27.3px;
+        text-align: right;
+        text-decoration: underline;
+    }
+
+    &__arrow {
+        align-self: center;
+    }
+
+    &__cards-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__card {
+        /* display: flex;
+        flex-direction: column; */
+        width: 350px;
+    }
+
+    &__card-img {
+        margin-bottom: 20px;
+    }
+
+    &__card-data {
+        font-size: 14px;
+        line-height: 18.9px;
+        margin-bottom: 10px;
+    }
+
+    &__card-text {
+        font-size: 16px;
+        line-height: 21.6px;
+        &_color_red {
+            color: #f6404f;
+        }
+    }
+
+    &__card-link {
+        display: block;
+        font-size: 21px;
+        line-height: 27.3px;
+        margin-bottom: 10px;
+        color: #2e373b;
+        &_color_red {
+            color: #f6404f;
+        }
+    }
+
+    &__info-wrap {
+        color: #2e373b;
+        background-color: #faf3e3;
+    }
+
+    &__info {
+        display: flex;
+        padding-top: 75px;
+        padding-bottom: 85px;
+        justify-content: space-between;
+        margin: 0px auto;
+    }
+
+    &__info-imgs {
+    }
+    &__info-img {
+        margin-bottom: 59px;
+        display: block;
+    }
+
+    &__news {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 562px;
+    }
+
+    &__news-header {
+        display: flex;
+        justify-content: space-between;
+        height: fit-content;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+    }
+
+    &__link-wrap {
+    }
+
+    &__link {
+    }
+
+    &__arrow {
+    }
+
+    &__news-list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__new {
+        display: flex;
+        column-gap: 30px;
+    }
+    &__new-text {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
     }
 }
