@@ -46,10 +46,87 @@ a {
         padding: 0px 15px;
     }
 
+    &__nav-btn {
+        position: relative;
+        z-index: 9;
+        height: 25px;
+        border: none;
+        padding: 0px;
+        cursor: pointer;
+        background: none;
+        &:focus,
+        &:active {
+            outline: none;
+        }
+    }
+    &__nav-btn-icon {
+        display: none;
+        position: relative;
+        width: 42px;
+        height: 5px;
+        background-color: #ffff;
+        border: none;
+        &:before {
+            position: absolute;
+            left: 0;
+            top: -10px;
+            content: "";
+            display: block;
+            width: 42px;
+            height: 5px;
+            background-color: #ffff;
+        }
+        &:after {
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            content: "";
+            display: block;
+            width: 42px;
+            height: 5px;
+            background-color: #ffff;
+        }
+    }
+
+    &__mobile-nav {
+        display: none;
+        background-color: #0d666e;
+        opacity: 0.9;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 8;
+        flex-direction: column;
+        row-gap: 20px;
+        width: 320px;
+        height: 100%;
+        padding: 30px 50px 20px 80px;
+    }
+
+    &__mobile-list li{
+        height: 50%;
+        
+        margin-bottom: 30px;
+        font-size: 18px;
+        font-weight: 700;
+        &:hover{
+            text-decoration: underline;
+            color: #FFC41E;
+        }
+
+    }
+    &__mobile-logo{
+        margin-bottom: 20px;
+    }
+
     &__logo {
         flex-basis: 489px;
     }
 
+    &__link-logo {
+        width: 175px;
+        display: block;
+    }
     &__logo-img {
         height: 24px;
         width: 175px;
@@ -57,17 +134,47 @@ a {
 
     &__nav {
         gap: 15px;
-        flex-basis: 901px;
+        flex-basis: 651px;
         min-width: 386px;
     }
 
-    &__search {
+    /* &__search {
         flex-basis: 88px;
     }
 
     &__search-img {
         width: 20px;
         height: 18px;
+    } */
+
+    &__search-box {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10px;
+        width: 250px;
+    }
+    &__search-box:hover > .header__search-input {
+        border: 1px solid #ffffff;
+        width: 250px;
+    }
+
+    &__search-input {
+        color: #ffffff;
+        border-radius: 40px;
+        border: none;
+        background: none;
+        outline: none;
+        transition: 0.4s;
+        width: 0px;
+        padding: 0;
+        &::placeholder {
+            color: #ffffff;
+            padding-left: 10px;
+        }
+    }
+
+    &__search-btn {
+        background-color: transparent;
     }
 
     &__lang-globus {
@@ -96,15 +203,12 @@ a {
         display: flex;
         justify-content: space-between;
         /* max-width: 1132px; */
-        height: 462px;
+        /* height: 462px; */
         margin: 217px auto 53px;
         /* padding: 0px 10px; */
     }
 
     &__info-text {
-        display: flex;
-        flex-direction: column;
-        align-self: flex-start;
     }
 
     &__text-title {
@@ -112,13 +216,14 @@ a {
         font-size: 64px;
         line-height: 102px;
         text-transform: uppercase; //все символы текста прописные,верхний регистр
+        /* margin-bottom: 35px; */
     }
 
     &__text {
         font-weight: normal;
         font-size: 24px;
         line-height: 33px;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
     }
     &__link-arrow {
     }
@@ -193,6 +298,7 @@ a {
 }
 
 .main {
+    /* display: none; */
     &__nav {
         /* display: none; */
         background-color: #2378fc;
@@ -225,7 +331,7 @@ a {
     &__nav-link {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        /* gap: 15px; */
         font-size: 16px;
         line-height: 21.6px;
         &:hover {
@@ -270,7 +376,7 @@ a {
         font-weight: 500;
         font-size: 21px;
         line-height: 27.3px;
-        text-align: right;
+        /* text-align: right; */
         text-decoration: underline;
     }
 
@@ -338,6 +444,9 @@ a {
         margin-bottom: 59px;
         display: block;
     }
+    &__info-link {
+        display: block;
+    }
 
     &__news {
         display: flex;
@@ -378,5 +487,126 @@ a {
         display: flex;
         flex-direction: column;
         gap: 14px;
+    }
+}
+
+.footer {
+    &__wrap {
+        background-color: #30bcc9;
+    }
+
+    &__nav-container {
+        display: flex;
+        margin: 0px auto;
+        padding-top: 60px;
+        padding-bottom: 70px;
+        cursor: default;
+    }
+    &__nav {
+        display: flex;
+    }
+
+    &__column-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        width: 33.33%;
+    }
+
+    &__nav-text {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18.9px;
+        color: #e0e0e0;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 27.3px;
+        letter-spacing: -0.01em;
+        /* cursor: default; */
+    }
+
+    &__nav-link {
+        &:hover {
+            text-decoration: underline;
+            color: #ffc41e;
+        }
+    }
+    &__nav-linkes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__nav-buttons {
+    }
+
+    &__app-store {
+        display: block;
+        margin-bottom: 15px;
+        border-radius: 50%;
+        background-color: #30bcc9;
+    }
+
+    &__media {
+        max-width: 255px;
+    }
+
+    &__social {
+        margin-bottom: 50px;
+    }
+
+    &__title-social {
+        margin-bottom: 20px;
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 27.3px;
+        letter-spacing: -0.01em;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 28px;
+    }
+    &__btn-media {
+        background-color: transparent;
+    }
+
+    &__folow {
+    }
+
+    &__title-folow {
+        margin-bottom: 15px;
+    }
+
+    &__folow-text {
+        font-size: 14px;
+        line-height: 135%;
+        color: #e0e0e0;
+        margin-bottom: 25px;
+    }
+    &__input {
+        width: 215px;
+        height: 40px;
+        padding-left: 20px;
+    }
+    &__form {
+    }
+    &__form {
+        display: flex;
+    }
+
+    &__bgc-icon {
+        width: 40px;
+        background-color: #f6404f;
+    }
+    &__form-icon {
+        display: block;
+        margin: 12px auto 10px auto;
     }
 }

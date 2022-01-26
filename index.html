@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://fonts.cdnfonts.com/css/circe" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
     <title>Экспофорум</title>
 </head>
 
@@ -15,8 +16,27 @@
         <div class="header__wrap">
             <div class="header__top">
                 <div class="header__top-inside">
+                    <button class="header__nav-btn">
+                        <span class="header__nav-btn-icon"></span>
+                    </button>
+
+                    <div class="header__mobile-nav">
+                        <a class="header__mobile-logo" href="#"><img src="/img/SVG/logo2.svg" alt=""></a>
+                        <div class="header__mobile-list">
+                            <ul>
+                                <li><a href="#">О комплексе</a></li>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Медиа-банк</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
                     <div class="header__logo">
-                        <a href="#"><img src="/img/png/logo1.png" alt="" class="header__logo-img"></a>
+                        <a class="header__link-logo" href="#"><img src="/img/png/logo1.png" alt=""
+                                class="header__logo-img"></a>
                     </div>
                     <nav class="header__nav">
                         <ul class="nav">
@@ -27,9 +47,13 @@
                             <li><a href="#" class="nav__link">Контакты</a></li>
                         </ul>
                     </nav>
-                    <div class="header__search">
-                        <img src="/img/SVG/search.svg" alt="" class="header__search-img">
+
+                    <div class="header__search-box">
+                        <button class="header__search-btn"><img src="/img/SVG/search.svg" alt=""></button>
+                        <input type="search" class="header__search-input" name="" placeholder="Поиск...">
+
                     </div>
+
                     <div class="header__lang">
                         <div class="header__globus">
                             <img src="/img/SVG/globe.svg" alt="" class="header__globus-img">
@@ -44,7 +68,7 @@
                     <h1 class="header__text-title">ЭКСПОФОРУМ</h1>
                     <div class="header__text">конгрессно-выставочный центр<br>Cанкт-Петербурга</div>
 
-                    <div class="header__link-arrow">
+                    <div class="header__link-arrow header__link-arrow_align_center">
                         <a class="header__link-wrap" href="#">
                             <div class="header__link">О комплексе</div>
                             <div class="header__arrow">
@@ -226,8 +250,9 @@
         <div class="main__info-wrap">
             <div class="main__info container">
                 <div class="main__info-imgs">
-                    <img class="main__info-img" src="/img/JPG/parkMesto.jpg" alt="">
-                    <img src="/img/JPG/axpoElka2.jpg" alt="">
+                    <a class="main__info-link" href="#"><img class="main__info-img" src="/img/JPG/parkMesto.jpg"
+                            alt=""></a>
+                    <a class="main__info-link" href="#"><img src="/img/JPG/axpoElka2.jpg" alt=""></a>
                 </div>
 
                 <div class="main__news">
@@ -280,6 +305,108 @@
         </div>
 
     </main>
+
+
+    <footer class="footer__wrap">
+        <div class="footer__nav-container container">
+            <div class="footer__nav">
+
+                <nav class="footer__column-nav">
+                    <div class="footer__nav-text">
+                        <h3 class="footer__title">О компании</h3>
+                        <ul class="footer__nav-linkes">
+                            <li class="footer__nav-link"><a href="#">О нашей компании</a></li>
+                            <li class="footer__nav-link"><a href="#">Вакансии</a></li>
+                            <li class="footer__nav-link"><a href="#">Партнеры</a></li>
+                            <li class="footer__nav-link"><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__nav-text">
+                        <h3 class="footer__title">Организаторам</h3>
+                        <ul class="footer__nav-linkes">
+                            <li class="footer__nav-link"><a href="#">Преимущества площадки</a></li>
+                            <li class="footer__nav-link"><a href="#">Структура комплекса</a></li>
+                            <li class="footer__nav-link"><a href="#">Онлайн-заявка на организацию</a></li>
+                            <li class="footer__nav-link"><a href="#">Документы организаторам</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <nav class="footer__column-nav">
+                    <div class="footer__nav-text">
+                        <h3 class="footer__title">Экспонентам</h3>
+                        <ul class="footer__nav-linkes">
+                            <li class="footer__nav-link"><a href="#">Общие условия участия</a></li>
+                            <li class="footer__nav-link"><a href="#">Услуги экспонентамa></li>
+                            <li class="footer__nav-link"><a href="#">Документы экспонентам</a></li>
+                            <li class="footer__nav-link"><a href="#">Забронировать гостиницу</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer__nav-text">
+                        <h3 class="footer__title">Посетителям</h3>
+                        <ul class="footer__nav-linkes">
+                            <li class="footer__nav-link"><a href="#">Сервисы</a></li>
+                            <li class="footer__nav-link"><a href="#">Онлайн-регистрация</a></li>
+                            <li class="footer__nav-link"><a href="#">Забронировать гостиницу</a></li>
+                            <li class="footer__nav-link"><a href="#">Центр деловых контактов</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <nav class="footer__column-nav">
+                    <div class="footer__nav-text">
+                        <h3 class="footer__title">Прессе</h3>
+                        <ul class="footer__nav-linkes">
+                            <li class="footer__nav-link"><a href="#">Аккредитация</a></li>
+                            <li class="footer__nav-link"><a href="#">Пресс-служба</a></li>
+                            <li class="footer__nav-link"><a href="#">Правила аккредитации</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav-buttons">
+                        <h3 class="footer__title">Приложение</h3>
+                        <button class="footer__app-store">
+                            <img src="/img/buttons/appstore.svg" alt="">
+                        </button>
+
+                        <button class="footer__app-store">
+                            <img src="/img/buttons/googlePlay.svg" alt="">
+                        </button>
+                    </div>
+                </nav>
+            </div>
+
+
+
+            <div class="footer__media">
+                <div class="footer__social">
+                    <h3 class="footer__title-social">Мы в соц. сетях</h3>
+                    <div class="footer__icons">
+                        <button class="footer__btn-media"><img src="/img/SVG/youTube.svg" alt=""></button>
+                        <button class="footer__btn-media"><img src="/img/SVG/vk.svg" alt=""></button>
+                        <button class="footer__btn-media"><img src="/img/SVG/facebook.svg" alt=""></button>
+                        <button class="footer__btn-media"><img src="/img/SVG/instagram.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="footer__folow">
+                    <h3 class="footer__title-folow">Подписка на новости</h3>
+                    <p class="footer__folow-text">Получайте все самые последние<br>новости о мероприятиях
+                        в<br>Экспофоруме.</p>
+                    <div class="footer__form-wrap">
+                        <form class="footer__form" name="email">
+                            <p><input class="footer__input" type="email" placeholder="Введите ваш e-mail"></input></p>
+                            <button class="footer__bgc-icon"><img class="footer__form-icon" src="/img/form/form.svg"
+                                    alt=""></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
 </body>
 
 </html>

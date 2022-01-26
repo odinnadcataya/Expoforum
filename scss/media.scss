@@ -1,0 +1,109 @@
+@media (max-width: 1140px) {
+    .header {
+        &__content {
+            display: block;
+
+            margin: 100px auto 0px;
+        }
+        &__cards {
+            margin: 0px auto;
+        }
+        &__info-text {
+        }
+        &__text-title {
+            text-align: center;
+        }
+        &__text {
+            text-align: center;
+        }
+        &__link-arrow {
+            &_align_center {
+                width: fit-content;
+                margin: 0px auto;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .main {
+        &__nav-columns {
+            flex-wrap: wrap;
+            max-width: 517px;
+            row-gap: 47px;
+        }
+        &__cards {
+            max-width: 1129px;
+        }
+        &__cards-header {
+            justify-content: space-around;
+        }
+        &__cards-grid {
+            justify-content: center;
+            column-gap: 50px;
+        }
+    }
+}
+
+@media (max-width: 1075px) {
+    .main {
+        &__info {
+            flex-wrap: wrap;
+            max-width: 1000px;
+            justify-content: center;
+            row-gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer {
+        &__nav-container {
+            flex-wrap: wrap;
+            /* max-width: 700px; */
+            justify-content: center;
+        }
+        &__nav {
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        &__column-nav {
+            justify-content: center;
+            /* max-width: 285px; */
+        }
+        &__nav-text {
+            flex-basis: 197px;
+        }
+        &__nav-buttons {
+            flex-basis: 197px;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    body {
+        overflow-y: hidden;
+    }
+    .header {
+        &__top-inside {
+            flex-basis: 450px;
+        }
+        &__nav {
+            display: none;
+        }
+        &__nav-btn {
+        }
+        &__nav-btn-icon {
+            display: block;
+        }
+        &__mobile-nav {
+            display: flex;
+        }
+        &__logo {
+        }
+        &__link-logo {
+            margin: 0px auto;
+        }
+        &__search-box {
+            max-width: 200px;
+        }
+    }
+}
