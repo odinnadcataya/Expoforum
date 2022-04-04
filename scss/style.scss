@@ -19,8 +19,6 @@ a {
 }
 
 .header {
-    
-    /* display: none; */
     background: linear-gradient(90deg, #9aa5b1, #b3b3b3);
     &__wrap {
         max-width: 1920px;
@@ -200,17 +198,14 @@ a {
     &__content {
         display: flex;
         justify-content: space-between;
-        /* max-width: 1132px; */
-        /* height: 462px; */
         margin: 217px auto 53px;
-        /* padding: 0px 10px; */
     }
 
     &__text-title {
         font-weight: bold;
         font-size: 64px;
         line-height: 102px;
-        text-transform: uppercase; //все символы текста прописные,верхний регистр
+        text-transform: uppercase;
     }
 
     &__text {
@@ -224,7 +219,6 @@ a {
         flex-direction: row;
         flex-basis: 119px;
         gap: 10px;
-        
     }
 
     &__link {
@@ -285,10 +279,7 @@ a {
 }
 
 .main {
-    
-    /* display: none; */
     &__nav {
-        display: none;
         background-color: #2378fc;
     }
 
@@ -299,14 +290,10 @@ a {
         margin: 0px auto;
     }
 
-    &__nav-text {
-    }
-
     &__nav-link-wrap {
         display: flex;
         flex-direction: column;
         gap: 15px;
-
     }
 
     &__nav-text-title {
@@ -320,7 +307,6 @@ a {
     &__nav-link {
         display: flex;
         flex-direction: column;
-        /* gap: 15px; */
         font-size: 16px;
         line-height: 21.6px;
         &:hover {
@@ -330,7 +316,6 @@ a {
     }
 
     &__cards-wrap {
-        /* display: none; */
         background-color: #ffc41e;
         color: #2e373b;
     }
@@ -360,14 +345,12 @@ a {
     &__link-wrap a {
         display: flex;
         gap: 15px;
-        
     }
 
     &__link {
         font-weight: 500;
         font-size: 21px;
         line-height: 27.3px;
-        /* text-align: right; */
         text-decoration: underline;
     }
 
@@ -382,8 +365,6 @@ a {
     }
 
     &__card {
-        /* display: flex;
-        flex-direction: column; */
         width: 350px;
     }
 
@@ -442,7 +423,7 @@ a {
         max-width: 100%;
         height: auto;
     }
-    
+
     &__news {
         display: flex;
         flex-direction: column;
@@ -456,17 +437,8 @@ a {
         margin-bottom: 30px;
     }
 
-    &__text {
-    }
-
     &__link-wrap {
         padding-top: 9px;
-    }
-
-    &__link {
-    }
-
-    &__arrow {
     }
 
     &__news-list {
@@ -487,7 +459,6 @@ a {
 }
 
 .footer {
-    
     &__wrap {
         background-color: #30bcc9;
     }
@@ -524,7 +495,6 @@ a {
         font-size: 21px;
         line-height: 27.3px;
         letter-spacing: -0.01em;
-        /* cursor: default; */
     }
 
     &__nav-link {
@@ -537,9 +507,6 @@ a {
         display: flex;
         flex-direction: column;
         gap: 10px;
-    }
-
-    &__nav-buttons {
     }
 
     &__app-store {
@@ -574,9 +541,6 @@ a {
         background-color: transparent;
     }
 
-    &__folow {
-    }
-
     &__title-folow {
         margin-bottom: 15px;
     }
@@ -591,8 +555,6 @@ a {
         width: 215px;
         height: 40px;
         padding-left: 20px;
-    }
-    &__form {
     }
     &__form {
         display: flex;
