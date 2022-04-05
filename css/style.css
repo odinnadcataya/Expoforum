@@ -73,10 +73,88 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+/*Плавающая кнопка*/
+/* .main {
+    &__back-btn {
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        bottom: 60px;
+        right: 60px;
+        background-color: #d1a954;
+        border-radius: 50px;
+        z-index: 999;
+        p {
+            width: fit-content;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            font-weight: bold;
+            line-height: 1.5;
+            font-size: 15px;
+            a {
+                display: block;
+                padding-top: 10px;
+            }
+        }
+    }
+} */
+.back-btn {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 100px;
+  right: 60px;
+  background-color: #d1a954;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  z-index: 999;
+}
+
+.back-btn p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.back-btn p a {
+  display: block;
+  /* padding-top: 10px; */
+}
+
+/*-----------------------------*/
 body {
   font-family: Circe;
   font-style: normal;
   color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 a {
@@ -94,6 +172,10 @@ a {
 }
 
 .header {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   background: -webkit-gradient(linear, left top, right top, from(#9aa5b1), to(#b3b3b3));
   background: -webkit-linear-gradient(left, #9aa5b1, #b3b3b3);
   background: -o-linear-gradient(left, #9aa5b1, #b3b3b3);
@@ -471,6 +553,13 @@ a {
   text-decoration: none;
 }
 
+.main {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
 .main__nav {
   background-color: #2378fc;
 }
@@ -740,6 +829,14 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 14px;
+}
+
+.footer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: 0 0 auto;
+      -ms-flex-direction: 0 0 auto;
+          flex-direction: 0 0 auto;
 }
 
 .footer__wrap {

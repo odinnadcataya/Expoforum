@@ -1,9 +1,13 @@
 @import "nullstyle.scss";
+@import "_styleBtn";
 
 body {
     font-family: Circe;
     font-style: normal; //обычное начертание текста
     color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
 }
 a {
     color: inherit;
@@ -19,6 +23,7 @@ a {
 }
 
 .header {
+    flex: 0 0 auto;
     background: linear-gradient(90deg, #9aa5b1, #b3b3b3);
     &__wrap {
         max-width: 1920px;
@@ -100,7 +105,9 @@ a {
             background-color: #ffff;
         }
     }
-
+//*************************
+    //МОБИЛЬНАЯ НАВИГАЦИЯ
+//*************************
     &__mobile-nav {
         display: flex;
         background-color: #0d666e;
@@ -279,6 +286,10 @@ a {
 }
 
 .main {
+    flex: 1 0 auto;
+    //*********************
+    //НАВИГАЦИЯ
+    //*********************
     &__nav {
         background-color: #2378fc;
     }
@@ -314,7 +325,9 @@ a {
             color: #ffc41e;
         }
     }
-
+    //***********************************
+    //ТЕКУЩИЕ И БУДУЩИЕ МЕРОПРИЯТИЯ
+    //************************************
     &__cards-wrap {
         background-color: #ffc41e;
         color: #2e373b;
@@ -396,7 +409,9 @@ a {
             color: #f6404f;
         }
     }
-
+    //***************************
+    //НОВОСТИ
+    //***************************
     &__info-wrap {
         color: #2e373b;
         background-color: #faf3e3;
@@ -459,6 +474,7 @@ a {
 }
 
 .footer {
+    flex-direction: 0 0 auto;
     &__wrap {
         background-color: #30bcc9;
     }
